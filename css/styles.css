@@ -782,7 +782,7 @@ ul {
 .agreement-checkbox:checked  +  .agreement-icon{
     border: none;
     background-color: var(--accent-color);
-    background-image: url(./images/symbol-defs04.svg#icon-check);
+    background-image: url(./images/symbol-defs.svg#icon-check);
     background-size: contain;
 
 }

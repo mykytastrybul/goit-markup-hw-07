@@ -6,7 +6,7 @@
   <title>Студия</title>
   <link rel="stylesheet" href="css/modern-normalize.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/main.min.css"/>
 </head>
 <body>
   <!-- ----------------------------Header----------------------------- -->
@@ -323,33 +323,33 @@
       </ul>
     </address>
   </div>
-  <div class="footer__join">
-    <h3 class="footer__join-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
-    <ul class="footer__join-list list">
-      <li class="footer__join-item"> 
-        <a href="/" class="link footer__join-link">
-          <svg class="footer__join-icon">
+  <div class="join">
+    <h3 class="join__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+    <ul class="join__list list">
+      <li class="join__item"> 
+        <a href="/" class="link join__link">
+          <svg class="join__icon">
             <use href="images/symbol-defs.svg#icon-instagram"></use>
           </svg>
         </a>
       </li>
-      <li class="footer__join-item"> 
-        <a href="/" class="link footer__join-link">
-          <svg class="footer__join-icon">
+      <li class="join__item"> 
+        <a href="/" class="link join__link">
+          <svg class="join__icon">
             <use href="images/symbol-defs.svg#icon-twitter"></use>
           </svg>
         </a>
       </li>
-      <li class="footer__join-item"> 
-        <a href="/" class="link footer__join-link">
-          <svg class="footer__join-icon">
+      <li class="join__item"> 
+        <a href="/" class="link join__link">
+          <svg class="join__icon">
             <use href="images/symbol-defs.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
-      <li class="footer__join-item"> 
-        <a href="/" class="link footer__join-link">
-          <svg class="footer__join-icon">
+      <li class="join__item"> 
+        <a href="/" class="link join__link">
+          <svg class="join__icon">
             <use href="images/symbol-defs.svg#icon-linkedin"></use>
           </svg>
         </a>
@@ -370,63 +370,63 @@
   </div>
   </div>
 </footer>
-<!-- -------------------------Backdrop---------------------------------- -->
+<!-- -------------------------Modal---------------------------------- -->
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button type="button" class="btn-close" data-modal-close>
+    <button type="button" class="modal__btn-close" data-modal-close>
       <svg width="11px" height="11px" class="close-icon">
         <use href="./images/symbol-defs.svg#icon-vector"></use>
       </svg>
     </button>
-    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-    <form  action="#" class="modal-form">
-      <div class="modal-form-item">
-        <label class="modal-form-label" for="user-name">Имя</label>
-        <div class="modal-form-input">
-          <input type="text" class="modal-form-input-input" name="user-name" id="user-name">
-          <svg class="modal-form-input-icon" width="18px" height="18px">
+    <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+    <form  action="#" class="modal__form">
+      <div class="modal__form-item">
+        <label class="modal__form-label" for="user-name">Имя</label>
+        <div class="modal__form-input">
+          <input type="text" class="modal__form-input-input" name="user-name" id="user-name">
+          <svg class="modal__form-input-icon" width="18px" height="18px">
             <use href="./images/symbol-defs.svg#icon-person"></use>
           </svg>
         </div>
       </div>
-      <div class="modal-form-item">
-        <label class="modal-form-label" for="user-tel">Телефон</label>
-        <div class="modal-form-input">
-          <input type="tel" class="modal-form-input-input" name="user-tel" id="user-tel">
-          <svg class="modal-form-input-icon" width="18px" height="18px">
+      <div class="modal__form-item">
+        <label class="modal__form-label" for="user-tel">Телефон</label>
+        <div class="modal__form-input">
+          <input type="tel" class="modal__form-input-input" name="user-tel" id="user-tel">
+          <svg class="modal__form-input-icon" width="18px" height="18px">
             <use href="./images/symbol-defs.svg#icon-phone"></use>
           </svg>
         </div>
       </div>
-      <div class="modal-form-item">
-        <label class="modal-form-label" for="user-email">Почта</label>
-        <div class="modal-form-input">
-          <input type="email" class="modal-form-input-input" name="user-email" id="user-email">
-          <svg class="modal-form-input-icon" width="18px" height="18px">
+      <div class="modal__form-item">
+        <label class="modal__form-label" for="user-email">Почта</label>
+        <div class="modal__form-input">
+          <input type="email" class="modal__form-input-input" name="user-email" id="user-email">
+          <svg class="modal__form-input-icon" width="18px" height="18px">
             <use href="./images/symbol-defs.svg#icon-email"></use>
           </svg>
         </div>
       </div>
-      <div class="modal-form-item">
-        <label class="modal-form-label" for="user-text">Комментарий</label>
-        <div class="modal-form-input">
-          <textarea class="modal-form-input-text-area" name="user-text" id="user-text" placeholder="Введите текст"></textarea> 
+      <div class="modal__form-item">
+        <label class="modal__form-label" for="user-text">Комментарий</label>
+        <div class="modal__form-input">
+          <textarea class="modal__form-input-text-area" name="user-text" id="user-text" placeholder="Введите текст"></textarea> 
         </div>
       </div>
       <div class="agreement">
-        <label class="agreement-label">
-          <input type="checkbox" class="agreement-checkbox" name="agreement" id="agreement">
-          <span class="agreement-icon">
-            <svg class="agreement-check-icon" width="16" height="15">
+        <label class="agreement__label">
+          <input type="checkbox" class="agreement__checkbox" name="agreement" id="agreement">
+          <span class="agreement__icon">
+            <svg class="agreement__check-icon" width="16" height="15">
               <use href="./images/symbol-defs.svg#icon-check"></use>
             </svg>
           </span>
             Соглашаюсь с рассылкой и принимаю
-          <a href="/" class="agreement-link link">Условия договора</a>
+          <a href="/" class="agreement__link link">Условия договора</a>
         </label>
       </div>
-      <div class="modal-btn">
-        <button class="modal-button" type="submit">Отправить</button>
+      <div class="modal__btn">
+        <button class="modal__button" type="submit">Отправить</button>
       </div>
     </form>
   </div>
